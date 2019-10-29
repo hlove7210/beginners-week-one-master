@@ -1,0 +1,99 @@
+body {
+  color: rgb(65,97,138);
+  font-family: arial;
+}
+div{
+  min-height: 100vh;
+  width: 100vw;
+}
+/* this changes the amount of the viewport height that each division takes up */
+
+h1, h2{
+  text-align: center;
+}
+h1{
+  font-size: 5em;
+}
+/* Font size em is a relative font size adjustment;
+5em is requesting font 5x browser default */
+
+img{
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+    border-radius:130px;
+}
+
+/* Display - flex will be important later
+Padding adds space around the object
+Margin adds space outside/between objects
+Border radius gives a measure of how much to round the corners of the object
+*/
+
+p{
+  width: 40%;
+  margin: 10vh 10vw;
+  font-size: 2em;
+}
+/* width - percentage of page that the text takes up
+marging - space around the text
+font-size - as above
+Percentage takes into account margins and padding of parent element, vh or vw is an absolute value*/
+
+a{
+  color: rgb(0,0,0)
+}
+/* changing the colour of the links on the page to black */
+
+ol{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10%;
+  font-size: 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* display flex and justify content allows the list to be spread out evenly across window */
+/* div can be used to select a group of elements */
+/* ids must be unique values only used once on page */
+/* Class value not unique and can be added to many attributes */
+
+li#lower{
+  margin-top:7%;
+}
+
+li#lowest{
+  margin-top: 14%;
+}
+/* use the # stymbol to reference an attribute ID */
+/* class selectors added by using class= */
+
+div.contrast{
+  background-color: rgb(0,0,0);
+  color: rgba(255,255,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* can only use justify content when also using display flex */
+/* align-items is vertical alignment */
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+li{
+  margin: 20px;
+  transition: 0.6s ease;
+}
+
+li:hover{
+  font-size: 3em;
+  transition: 0.6s ease;
+  color: red;
+}
+
+/* every element can have tags applied which give a state-dependent style */
+/* eg - when cursor hovers change state */
